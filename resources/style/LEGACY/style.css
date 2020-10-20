@@ -1,0 +1,400 @@
+/* sel 1
+$maincolor: #e84118;
+$sligthlyBrigter: #eb5a37;
+$bright: #f4a794;
+$slightlyDarker: #ab2f11;
+$darker: #4e1608;*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", Arial, serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section {
+  width: 100vw;
+}
+
+.profileAvatarRegion {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../vendors/images/computer-blurred.jpg");
+  background-size: cover;
+}
+
+.profileAvatarRegion .blendcolor {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00a8ff;
+  opacity: 90%;
+}
+
+.profileAvatarRegion .innerCenter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 62%;
+  width: 62%;
+  position: relative;
+  left: 19%;
+  top: 19%;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren {
+  width: 100%;
+  margin: auto;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren span {
+  vertical-align: middle;
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren span .avatarImg {
+  display: block;
+  width: 256px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Jost", Arial, serif;
+  color: white;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren h1 {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-weight: 800;
+  font-family: "Pacifico", cursive;
+  font-style: italic;
+  font-size: 64px;
+  margin: auto;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren .social {
+  width: 300px;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren .social a {
+  display: block;
+  margin: 0 25%;
+  color: white;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren .social a i {
+  font-size: 32px;
+}
+
+.resources .row .col-sm .cutoff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.resources .row .col-sm .cutoff * {
+  height: 220px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .profileAvatarRegion .innerCenter .alignedChildren span {
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+  }
+  .profileAvatarRegion .innerCenter .alignedChildren span .avatarImg {
+    width: 128px;
+  }
+  .profileAvatarRegion .innerCenter .alignedChildren h1 {
+    font-size: 32px;
+  }
+  .profileAvatarRegion .innerCenter .alignedChildren .social {
+    width: 90px;
+  }
+  .profileAvatarRegion .innerCenter .alignedChildren .social a {
+    display: block;
+    margin: 6px auto;
+    width: 16px;
+    color: white;
+  }
+  .profileAvatarRegion .innerCenter .alignedChildren .social a i {
+    font-size: 28px;
+  }
+}
+
+.innerCenter {
+  display: block;
+  width: 62%;
+  height: 62%;
+}
+
+/*
+.shortBio {
+    display: inline-block;
+    width: 60vw;
+    height: 28vw;
+    margin: 0;
+    margin-top: 30px;
+}*/
+/*
+.sectionContainer {
+    /*
+    :nth-child(odd of section) {
+        background-color: white;
+        color: $font-desc-color;
+    }
+    :nth-child(even of section) {
+        background-color: transparentize($color: $maincolor, 0.1);
+        color: white;
+    }
+
+    :nth-child(1) {
+        margin: 0 0 10px;
+    }
+
+    /*
+    section {
+        display: block;
+        margin: 10px 0;
+    }*/
+.contentContainer {
+  margin: 0;
+  padding: 30px 0;
+}
+
+.contentContainer h1 {
+  font-weight: 900;
+  font-size: 64px;
+}
+
+.contentContainer h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.contentContainer p {
+  font-weight: 500;
+}
+
+.odd {
+  background-color: white;
+}
+
+.odd h1,
+.odd h2,
+.odd h3,
+.odd p {
+  color: #00a8ff;
+  opacity: 90%;
+}
+
+.even {
+  background-color: rgba(0, 168, 255, 0.9);
+}
+
+.even h1,
+.even h2,
+.even h3,
+.even p {
+  color: white;
+}
+
+.longDescription {
+  padding: 0 25%;
+}
+
+.timeline {
+  width: 200px;
+  position: absolute;
+  border-top: 3px solid rgba(0, 168, 255, 0.9);
+  border-left: 3px solid rgba(0, 168, 255, 0.9);
+}
+
+hr {
+  border-top: 2px solid rgba(0, 168, 255, 0.9);
+}
+
+#education,
+#work,
+#freeTime {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#education *,
+#work *,
+#freeTime * {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*
+.services {
+    .row {
+        .col {
+            margin: 20px;
+            
+            * {
+                margin: 0 auto;
+                width: 255px;
+            }
+        }
+    }
+}
+*/
+.services {
+  margin-top: 64px;
+}
+
+.services .row .col-md * {
+  text-align: center;
+}
+
+.services .row .col-md p {
+  margin: 8px 8px 24px;
+}
+
+.services .row .col-md i {
+  display: inline-block;
+  margin: 16px;
+  font-size: 32px;
+  color: #00a8ff;
+}
+
+.services .row .col-md div {
+  margin: 0 auto;
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 64px;
+  /*
+    * {
+         text-align: right;
+    } */
+  /*
+    .row {
+        .col-sm {
+            div {
+                display: block;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                img {
+                    width: 32px;
+                }
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+    }*/
+}
+
+.skills .row {
+  width: 100%;
+  margin: auto;
+}
+
+.skills .row * {
+  margin: auto 0;
+  padding: 0 10px 0 0;
+}
+
+.skills .row p {
+  width: 100px;
+}
+
+.card {
+  margin: 32px auto;
+}
+
+.cardFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 17rem;
+  height: 17rem;
+}
+
+.cardFrame img {
+  margin: auto;
+  width: 100%;
+}
+
+.card-body p,
+.card-body h5 {
+  color: #888;
+}
+
+.card-body .card-text {
+  height: 100px;
+}
+
+.card-body .btn {
+  background-color: #00a8ff;
+  border-color: #00a8ff;
+}
+
+.border3pxtop {
+  margin-top: 30px;
+  border-top: 3px #00a8ff solid;
+}
+
+.border3pxtop h2 {
+  margin-top: 20px;
+}
+
+.mainBgClr {
+  background-color: #00a8ff;
+}
+
+.viewGithub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 32px;
+  width: 180px;
+}
+
+.viewGithub span {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
