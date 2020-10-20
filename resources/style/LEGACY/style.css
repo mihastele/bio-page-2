@@ -27,35 +27,6 @@ section {
   width: 100vw;
 }
 
-.profileAvatarRegion {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  margin: 0;
-  padding: 0;
-  background-image: url("../../vendors/images/computer-blurred.jpg");
-  background-size: cover;
-}
-
-.profileAvatarRegion .blendcolor {
-  display: block;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: #00a8ff;
-  opacity: 90%;
-}
-
-.profileAvatarRegion .innerCenter {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 62%;
-  width: 62%;
-  position: relative;
-  left: 19%;
-  top: 19%;
-}
 
 .profileAvatarRegion .innerCenter .alignedChildren {
   width: 100%;
@@ -79,7 +50,7 @@ section {
 .profileAvatarRegion .innerCenter .alignedChildren p {
   text-align: center;
   font-size: 18px;
-  font-family: "Jost", Arial, serif;
+  font-family: "Courier Prime", Arial, serif;
   color: white;
 }
 
@@ -88,8 +59,8 @@ section {
   display: inline-block;
   width: 100%;
   color: #fff;
-  font-weight: 800;
-  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-family: "Courier Prime", cursive;
   font-style: italic;
   font-size: 64px;
   margin: auto;

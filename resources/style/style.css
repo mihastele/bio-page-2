@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+
+
+.profileAvatarRegion {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../vendors/images/computer-blurred.jpg");
+  background-size: cover;
+  clip-path: polygon(0 3em, 100% 0, 100% calc(100% - 3em), 0% 100%);
+}
+
+.profileAvatarRegion .blendcolor {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00a8ff;
+  opacity: 90%;
+}
+
+.profileAvatarRegion .innerCenter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 62%;
+  width: 62%;
+  position: relative;
+  left: 19%;
+  top: 19%;
+}
+
+#header {
+    display: block;
+    height: 38vh;
+    width: 100vw;
+    background-color: black;
+
+}
+
+#body {
+    display: block;
+    height: 62vh;
+    width: 100vw;
+}
