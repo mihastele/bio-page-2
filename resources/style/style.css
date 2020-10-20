@@ -37,16 +37,27 @@
   top: 19%;
 }
 
-#header {
-    display: block;
-    height: 38vh;
-    width: 100vw;
-    background-color: black;
-
+.minimenu {
+    margin: 1em auto;
 }
 
-#body {
+.minimenuitem {
     display: block;
-    height: 62vh;
-    width: 100vw;
+    float: left;
+    height: 35px;
+    width: 30%;
+    margin: 0.5em;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #00a8ff;
+}
+
+.minimenuitem a{
+    margin: auto;
+}
+
+.minimenuitem a:visited{
+    color: #00a8ff;
 }
