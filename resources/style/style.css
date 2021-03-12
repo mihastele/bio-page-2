@@ -4,37 +4,35 @@
     font-size: 18px;
 }
 
-
-
 .profileAvatarRegion {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  margin: 0;
-  padding: 0;
-  background-image: url("../../vendors/images/computer-blurred.jpg");
-  background-size: cover;
-  clip-path: polygon(0 3em, 100% 0, 100% calc(100% - 3em), 0% 100%);
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../vendors/images/computer-blurred.jpg");
+    background-size: cover;
+    clip-path: polygon(0 3em, 100% 0, 100% calc(100% - 3em), 0% 100%);
 }
 
 .profileAvatarRegion .blendcolor {
-  display: block;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: #00a8ff;
-  opacity: 90%;
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00a8ff;
+    opacity: 90%;
 }
 
 .profileAvatarRegion .innerCenter {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 62%;
-  width: 62%;
-  position: relative;
-  left: 19%;
-  top: 19%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 62%;
+    width: 62%;
+    position: relative;
+    left: 19%;
+    top: 19%;
 }
 
 .minimenu {
@@ -54,10 +52,76 @@
     color: #00a8ff;
 }
 
-.minimenuitem a{
+.minimenuitem a {
     margin: auto;
 }
 
-.minimenuitem a:visited{
+.minimenuitem a:visited {
     color: #00a8ff;
+}
+
+
+/* FROM LEGACY */
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+section {
+    width: 100vw;
+}
+
+.avatarImg {
+    display: block;
+    width: 256px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .avatarImg {
+        width: 128px;
+    }
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren h1 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Courier Prime", cursive;
+    font-style: italic;
+    font-size: 64px;
+    margin: auto;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren p {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Courier Prime", Arial, serif;
+    color: white;
+}
+
+.social {
+    width: 300px;
+}
+
+.social a {
+    display: block;
+    margin: 0 25%;
+    color: white;
+}
+
+.social a i {
+    font-size: 32px;
 }
