@@ -93,6 +93,11 @@ section {
     }
 }
 
+.profileAvatarRegion .innerCenter {
+    display: inline-block;
+    text-align: center;
+}
+
 .profileAvatarRegion .innerCenter .alignedChildren h1 {
     text-align: center;
     display: inline-block;
@@ -118,10 +123,29 @@ section {
 
 .social a {
     display: block;
-    margin: 0 25%;
+    margin: 0;
     color: white;
 }
 
 .social a i {
     font-size: 32px;
+}
+
+.measure {
+    max-width: 30em;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.containerchild {
+    display: inline-block;
 }
