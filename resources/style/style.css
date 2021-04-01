@@ -1,10 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
 }
-
-
 
 .profileAvatarRegion {
   width: 100vw;
@@ -22,7 +20,7 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: #00a8ff;
+  background-color: #4bcffa; /* #00a8ff */
   opacity: 90%;
 }
 
@@ -38,26 +36,117 @@
 }
 
 .minimenu {
-    margin: 1em auto;
+  margin: 1em auto;
 }
 
 .minimenuitem {
-    display: block;
-    float: left;
-    height: 35px;
-    width: 30%;
-    margin: 0.5em;
-    background-color: white;
-    text-align: center;
-    font-weight: 700;
-    border-radius: 3px;
-    color: #00a8ff;
+  display: inline-block;
+  height: 35px;
+  width: 30%;
+  margin: 0.5em;
+  background-color: white;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 3px;
+  color: #4bcffa;
+  vertical-align: middle;
 }
 
-.minimenuitem a{
-    margin: auto;
+.minimenuitem a {
+  display: inline-block;
+  margin: auto;
+  vertical-align: middle;
 }
 
-.minimenuitem a:visited{
-    color: #00a8ff;
+.minimenuitem a:visited {
+  color: #4bcffa;
+}
+
+/* FROM LEGACY */
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section {
+  width: 100vw;
+}
+
+.avatarImg {
+  display: block;
+  width: 256px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .avatarImg {
+    width: 128px;
+  }
+}
+
+.profileAvatarRegion .innerCenter {
+  display: inline-block;
+  text-align: center;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren h1 {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Courier Prime", cursive;
+  font-style: italic;
+  font-size: 64px;
+  margin: auto;
+}
+
+.profileAvatarRegion .innerCenter .alignedChildren p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Courier Prime", Arial, serif;
+  color: white;
+}
+
+.social {
+  width: 300px;
+}
+
+.social a {
+  display: block;
+  margin: 0;
+  color: white;
+}
+
+.social a i {
+  font-size: 32px;
+}
+
+.measure {
+  max-width: 30em;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+.containerchild {
+  display: inline-block;
 }

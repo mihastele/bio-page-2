@@ -1,0 +1,63 @@
+<div class="siema">
+  <div>Hi, I'm slide 1</div>
+  <div>Hi, I'm slide 2</div>
+  <div>Hi, I'm slide 3</div>
+  <div>Hi, I'm slide 4</div>
+</div>
+
+<button class="prev">prev</button>
+<button class="next">next</button>
+
+<div class="siema2">
+  <div>Hi, I'm slide 1</div>
+  <div>Hi, I'm slide 2</div>
+  <div>Hi, I'm slide 3</div>
+  <div>Hi, I'm slide 4</div>
+</div>
+
+<script src="vendors/style/siema.min.js"></script>
+<script>
+  const mySiema = new Siema({
+    selector: ".siema",
+    duration: 200,
+    easing: "ease-out",
+    perPage: 1,
+    startIndex: 0,
+    draggable: true,
+    multipleDrag: true,
+    threshold: 20,
+    loop: false,
+    rtl: false,
+    onInit: () => {},
+    onChange: () => {},
+  });
+  document
+    .querySelector(".prev")
+    .addEventListener("click", () => mySiema.prev());
+  document
+    .querySelector(".next")
+    .addEventListener("click", () => mySiema.next());
+
+  const mySiema2 = new Siema({
+    selector: ".siema2",
+    duration: 200,
+    easing: "ease-out",
+    perPage: 1,
+    startIndex: 0,
+    draggable: true,
+    multipleDrag: true,
+    threshold: 20,
+    loop: false,
+    rtl: false,
+    onInit: () => {},
+    onChange: () => {},
+  });
+  document
+    .querySelector(".prev")
+    .addEventListener("click", () => mySiema.prev());
+  document
+    .querySelector(".next")
+    .addEventListener("click", () => mySiema.next());
+</script>
+
+<!--https://pawelgrzybek.github.io/siema/#installation-->
