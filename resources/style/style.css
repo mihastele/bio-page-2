@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size: 10px;
 }
 
 .mainContainer {
@@ -17,42 +18,35 @@
   top: 30vh;
   text-align: center;
 }
-.mainContainer > div span {
+.mainContainer > div > span {
   display: inline-block;
   max-height: 50vh;
   text-align: center;
   max-width: 1140px;
+  background-color: rgba(4, 118, 158, 0.5);
 }
-.mainContainer > div span .avatar {
+.mainContainer > div > span .avatar {
   display: inline-block;
   width: 100%;
   height: 128px;
   text-align: center;
   margin-bottom: 0.5rem;
 }
-.mainContainer > div span .avatar .avatarImg {
+.mainContainer > div > span .avatar .avatarImg {
   display: inline-block;
   height: 128px;
   width: 128px;
   border-radius: 50%;
   text-align: center;
 }
-.mainContainer > div span h1 {
+.mainContainer > div > span h1 {
   font-family: Helvetica, sans-serif;
-  font-size: 48px;
+  font-size: 4rem;
   font-weight: 800;
 }
-.mainContainer > div span p {
-  font-size: 22px;
+.mainContainer > div > span p {
+  font-size: 2.5rem;
   font-weight: 700;
-}
-.mainContainer > div span span {
-  height: 200px;
-  display: block;
-}
-.mainContainer > div::after {
-  content: "";
-  clear: both;
 }
 
 /*# sourceMappingURL=style.css.map */
