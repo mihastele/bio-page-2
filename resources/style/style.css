@@ -17,13 +17,16 @@
   position: relative;
   top: 30vh;
   text-align: center;
+  color: white;
 }
 .mainContainer > div > span {
   display: inline-block;
   max-height: 50vh;
-  text-align: center;
   max-width: 1140px;
-  background-color: rgba(4, 118, 158, 0.5);
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(4, 118, 158, 0.6);
+  border-radius: 1rem;
 }
 .mainContainer > div > span .avatar {
   display: inline-block;
@@ -47,6 +50,17 @@
 .mainContainer > div > span p {
   font-size: 2.5rem;
   font-weight: 700;
+}
+.mainContainer > div > span a {
+  color: white;
+  text-decoration: none;
+}
+.mainContainer > div > span a i {
+  font-size: 2rem;
+  text-decoration: none;
+}
+.mainContainer > div > span a:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
